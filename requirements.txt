@@ -1,6 +1,6 @@
-streamlit
-supabase
-pandas
-numpy
-python
-plotly
+streamlit>=1.36
+supabase>=2.5
+pandas>=2.2
+numpy>=1.26
+python-dateutil
+plotly>=5.22
