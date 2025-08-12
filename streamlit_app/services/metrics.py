@@ -1,6 +1,6 @@
 from datetime import date
 import pandas as pd
-from .supabase_client import fetch_df
+from supabase_client import fetch_df
 
 T_SALES = "donut_sales_hourly"
 T_LABOR = "actual_table_labor"
