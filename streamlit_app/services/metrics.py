@@ -1,7 +1,7 @@
 from datetime import date
 import pandas as pd
 
-from .supabase_client import fetch_df
+from services.supabase_client import fetch_df
 
 # Table names (adjust if your schema differs)
 T_SALES = "donut_sales_hourly"      # columns: pc_number, date, time, product_type, quantity, value, product_name
