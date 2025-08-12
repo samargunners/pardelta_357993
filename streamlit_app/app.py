@@ -5,7 +5,12 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from settings import PC_NUMBER, DEFAULT_DATE_WINDOW_DAYS
+try:
+    from settings import PC_NUMBER, DEFAULT_DATE_WINDOW_DAYS
+except Exception:
+    # Fallback defaults so the app still loads if settings import fails
+    PC_NUMBER = "357993"
+    DEFAULT_DATE_WINDOW_DAYS = 7
 from services.metrics import (
     get_topline,
     get_hourly_sales,
