@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Streamlit local cache
+.streamlit/secrets.toml
+.streamlit/app.db
+
+# Data/cache
+streamlit_app/data/
